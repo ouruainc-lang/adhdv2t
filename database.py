@@ -5,7 +5,7 @@ from datetime import datetime
 from contextlib import contextmanager
 
 # Detect environment
-DATABASE_URL = os.getenv("DATABASE_URL")
+DATABASE_URL = os.getenv("DATABASE_URL") or os.getenv("POSTGRES_URL")
 IS_POSTGRES = bool(DATABASE_URL)
 
 if IS_POSTGRES:
