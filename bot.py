@@ -392,7 +392,7 @@ async def handle_voice(update: Update, context: ContextTypes.DEFAULT_TYPE):
         # 3. Gemini Process (Direct OGG Upload)
         # Gemini supports audio/ogg (Opus)
         gemini_file = genai.upload_file(ogg_path, mime_type="audio/ogg")
-        model = genai.GenerativeModel("gemini-1.5-flash")
+        model = genai.GenerativeModel("gemini-3-flash-preview")
         
         prompt = (
             "Extract actionable tasks, deadlines, and events from this audio. "
