@@ -32,16 +32,19 @@ def telegram_webhook():
     """
     Receives updates from Telegram via Webhook.
     """
-    if not bot.application:
-        return jsonify(error="Bot not initialized"), 500
-        
-    update = Update.de_json(request.get_json(force=True), bot.application.bot)
+    # Create a fresh app instance for this request to avoid "Event loop is closed"
+    # because asyncio.run() creates a new loop each time.
+    ptb_app = bot.create_app()
+    if not ptb_app:
+        return jsonify(error="Bot config missing"), 500
+
+    # Decouple update from the global bot if possible, or just use the fresh one
+    update = Update.de_json(request.get_json(force=True), ptb_app.bot)
     
-    # Process update
     async def process_update_async():
-        if not bot.application._initialized:
-            await bot.application.initialize()
-        await bot.application.process_update(update)
+        await ptb_app.initialize()
+        await ptb_app.process_update(update)
+        await ptb_app.shutdown()
 
     asyncio.run(process_update_async())
     
@@ -77,13 +80,18 @@ def cron_digest():
             
     ctx = MockContext(bot.application.bot)
     
-    ctx = MockContext(bot.application.bot)
+    # Create fresh app
+    ptb_app = bot.create_app()
+    if not ptb_app:
+        return jsonify(error="Bot config missing"), 500
+
+    ctx = MockContext(ptb_app.bot)
     
     try:
         async def run_digest():
-            if not bot.application._initialized:
-                await bot.application.initialize()
+            await ptb_app.initialize()
             await bot.daily_digest_job(ctx)
+            await ptb_app.shutdown()
 
         asyncio.run(run_digest())
         return jsonify(status="digest run complete")
