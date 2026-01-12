@@ -12,7 +12,7 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, ContextTypes, CommandHandler, MessageHandler, filters, CallbackQueryHandler
 import google.generativeai as genai
 from dotenv import load_dotenv
-from pydub import AudioSegment
+
 from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.cron import CronTrigger
 
@@ -49,9 +49,7 @@ PRO_TIER_MINUTES = 300.0
 
 # --- HELPER FUNCTIONS ---
 
-def get_audio_duration_minutes(file_path):
-    audio = AudioSegment.from_file(file_path)
-    return len(audio) / 60000.0  # Duration in minutes
+
 
 def sync_to_todoist(token, tasks_text, title=None):
     if not token: return False
@@ -372,33 +370,29 @@ async def handle_voice(update: Update, context: ContextTypes.DEFAULT_TYPE):
     status_msg = await update.message.reply_text("🎧 Processing...")
 
     ogg_path = None
-    mp3_path = None
 
     try:
         # 2. Download & Measure Duration
-        voice_file = await update.message.voice.get_file()
-        
-        with tempfile.NamedTemporaryFile(suffix=".ogg", delete=False) as tf:
-            ogg_path = tf.name
-        
-        await voice_file.download_to_drive(ogg_path)
-        
-        duration_mins = get_audio_duration_minutes(ogg_path)
+        # Optimization: Use Telegram metadata for duration (seconds) -> No ffmpeg needed!
+        voice = update.message.voice
+        duration_seconds = voice.duration if voice.duration else 0
+        duration_mins = duration_seconds / 60.0
         
         # Check limit again with new duration
         if used + duration_mins > limit:
-             await status_msg.edit_text("❌ This voice note is too long for your remaining quota.\n\nUpgrade to send more: /managesub")
+             await status_msg.edit_text(f"❌ This voice note ({duration_mins:.1f}m) is too long for your remaining quota.\n\nUpgrade to send more: /managesub")
              return
 
-        # 3. Convert
-        audio = AudioSegment.from_file(ogg_path, format="ogg")
-        with tempfile.NamedTemporaryFile(suffix=".mp3", delete=False) as tf:
-            mp3_path = tf.name
-        audio.export(mp3_path, format="mp3")
+        # Download file to /tmp (Vercel Requirement for Write Access)
+        # Note: python-telegram-bot's download_to_drive handles path
+        voice_file = await voice.get_file()
+        ogg_path = f"/tmp/voice_{user_id}_{int(duration_seconds)}.oga"
+        await voice_file.download_to_drive(ogg_path)
         
-        # 4. Gemini Process
-        gemini_file = genai.upload_file(mp3_path, mime_type="audio/mp3")
-        model = genai.GenerativeModel("gemini-3-flash-preview")
+        # 3. Gemini Process (Direct OGG Upload)
+        # Gemini supports audio/ogg (Opus)
+        gemini_file = genai.upload_file(ogg_path, mime_type="audio/ogg")
+        model = genai.GenerativeModel("gemini-1.5-flash")
         
         prompt = (
             "Extract actionable tasks, deadlines, and events from this audio. "
@@ -456,7 +450,6 @@ async def handle_voice(update: Update, context: ContextTypes.DEFAULT_TYPE):
         
     finally:
         if ogg_path and os.path.exists(ogg_path): os.remove(ogg_path)
-        if mp3_path and os.path.exists(mp3_path): os.remove(mp3_path)
 
 # --- DAILY DIGEST ---
 async def daily_digest_job(context: ContextTypes.DEFAULT_TYPE):
