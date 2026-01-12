@@ -501,8 +501,15 @@ async def daily_digest_job(context: ContextTypes.DEFAULT_TYPE):
 # --- GLOBAL ---
 application = None
 
-async def post_init(application: ApplicationBuilder):
-    await application.bot.set_my_commands([
+# --- GLOBAL ---
+application = None
+
+async def sync_commands(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """
+    Manual command to sync bot menu commands.
+    Run this once to populate the menu.
+    """
+    commands = [
         ('start', 'Start the bot'),
         ('help', 'Integration Setup Guide 📘'),
         ('status', 'Check usage and plan'),
@@ -512,8 +519,11 @@ async def post_init(application: ApplicationBuilder):
         ('set_notion_page', 'Set Notion page ID'),
         ('set_todoist', 'Set Todoist API token'),
         ('set_digest', 'Set Daily Digest time (HH:MM)'),
-        ('set_timezone', 'Set Timezone (e.g. Asia/Singapore)')
-    ])
+        ('set_timezone', 'Set Timezone (e.g. Asia/Singapore)'),
+        ('sync_commands', 'Update Command Menu 🔄')
+    ]
+    await context.bot.set_my_commands(commands)
+    await update.message.reply_text("✅ Command menu updated! You may need to restart your app to see changes.")
 
 def create_app():
     global application
@@ -521,7 +531,8 @@ def create_app():
         print("❌ Error: TELEGRAM_TOKEN not found in .env")
         return None
 
-    application = ApplicationBuilder().token(TELEGRAM_TOKEN).post_init(post_init).build()
+    # Remove post_init to prevent API spam on every serverless request
+    application = ApplicationBuilder().token(TELEGRAM_TOKEN).build()
 
     # Handlers
     application.add_handler(CommandHandler('start', start))
@@ -536,6 +547,9 @@ def create_app():
     application.add_handler(CommandHandler('set_notion_page', set_notion_page))
     application.add_handler(CommandHandler('set_digest', set_digest))
     application.add_handler(CommandHandler('set_timezone', set_timezone))
+    
+    # Manual Command Sync (Run once)
+    application.add_handler(CommandHandler('sync_commands', sync_commands))
     
     application.add_handler(MessageHandler(filters.VOICE, handle_voice))
     
