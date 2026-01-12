@@ -56,11 +56,12 @@ def init_db():
         # 1. Users Table
         # Note: Postgres doesn't strictly need IF NOT EXISTS in all versions but it's standard.
         # SQLite uses TEXT for everything, Postgres has specific types but TEXT works for both roughly.
+        # FIX: Postgres strict boolean check. DEFAULT 0 is invalid for BOOLEAN. Use FALSE.
         c.execute(f'''
             CREATE TABLE IF NOT EXISTS users (
                 user_id TEXT PRIMARY KEY,
                 usage_count INTEGER DEFAULT 0,
-                is_paid BOOLEAN DEFAULT 0
+                is_paid BOOLEAN DEFAULT FALSE
             )
         ''')
         
@@ -71,7 +72,7 @@ def init_db():
                 user_id TEXT,
                 task_content TEXT,
                 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-                is_digest_sent BOOLEAN DEFAULT 0
+                is_digest_sent BOOLEAN DEFAULT FALSE
             )
         ''')
         
@@ -106,7 +107,8 @@ def check_user_status(user_id):
         row = c.fetchone()
         
         if row is None:
-            c.execute(f'INSERT INTO users (user_id, usage_count, is_paid, plan_tier, minutes_used) VALUES ({p}, 0, 0, \'free\', 0.0)', (str(user_id),))
+            # FIX: Postgres strict boolean. Use FALSE instead of 0.
+            c.execute(f'INSERT INTO users (user_id, usage_count, is_paid, plan_tier, minutes_used) VALUES ({p}, 0, FALSE, \'free\', 0.0)', (str(user_id),))
             # No need to commit here, context manager does it
             
             c.execute(f'SELECT * FROM users WHERE user_id = {p}', (str(user_id),))
