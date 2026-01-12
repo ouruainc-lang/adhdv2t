@@ -38,7 +38,12 @@ def telegram_webhook():
     update = Update.de_json(request.get_json(force=True), bot.application.bot)
     
     # Process update
-    asyncio.run(bot.application.process_update(update))
+    async def process_update_async():
+        if not bot.application._initialized:
+            await bot.application.initialize()
+        await bot.application.process_update(update)
+
+    asyncio.run(process_update_async())
     
     return jsonify(status="ok")
 
@@ -72,8 +77,15 @@ def cron_digest():
             
     ctx = MockContext(bot.application.bot)
     
+    ctx = MockContext(bot.application.bot)
+    
     try:
-        asyncio.run(bot.daily_digest_job(ctx))
+        async def run_digest():
+            if not bot.application._initialized:
+                await bot.application.initialize()
+            await bot.daily_digest_job(ctx)
+
+        asyncio.run(run_digest())
         return jsonify(status="digest run complete")
     except Exception as e:
         return jsonify(error=str(e)), 500
