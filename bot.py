@@ -339,16 +339,26 @@ async def set_digest(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def set_timezone(update: Update, context: ContextTypes.DEFAULT_TYPE):
     tz_str = context.args[0] if context.args else None
     if not tz_str:
-        await update.message.reply_text("Usage: /set_timezone <Area/City>\nExample: /set_timezone Asia/Singapore")
+        await update.message.reply_text(
+            "Usage: `/set_timezone <Area/City>`\n"
+            "Example: `/set_timezone Asia/Singapore`\n\n"
+            "🌍 [List of Timezones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)",
+            parse_mode='Markdown'
+        )
         return
     
     try:
         import pytz
         pytz.timezone(tz_str) # Validate
         database.update_user(update.effective_user.id, timezone=tz_str)
-        await update.message.reply_text(f"✅ Timezone set to {tz_str}!")
+        await update.message.reply_text(f"✅ Timezone set to *{tz_str}*!", parse_mode='Markdown')
     except Exception:
-        await update.message.reply_text("❌ Invalid timezone. Try 'US/Pacific', 'UTC', 'Asia/Singapore', etc.")
+        await update.message.reply_text(
+            "❌ Invalid timezone.\n"
+            "Try `US/Pacific`, `UTC`, `Europe/London`, `Asia/Singapore`.\n\n"
+            "👉 [See full list here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)",
+            parse_mode='Markdown'
+        )
 
 async def handle_voice(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = str(update.effective_user.id)
@@ -413,8 +423,16 @@ async def handle_voice(update: Update, context: ContextTypes.DEFAULT_TYPE):
             sync_msg = []
             
             # Create a shared title for the new page/task
-            # e.g. "Voice Note - January 12, 03:00 PM"
-            page_title = datetime.now().strftime("Voice Note - %B %d, %I:%M %p")
+            # Fix: Use User's Timezone
+            import pytz
+            user_tz = user_data.get('timezone', 'UTC')
+            try:
+                tz = pytz.timezone(user_tz)
+            except:
+                tz = pytz.UTC
+            
+            local_now = datetime.now(pytz.utc).astimezone(tz)
+            page_title = local_now.strftime("Voice Note - %B %d, %I:%M %p")
 
             if user_data.get('todoist_token'):
                 if sync_to_todoist(user_data['todoist_token'], content, title=page_title):
@@ -433,7 +451,7 @@ async def handle_voice(update: Update, context: ContextTypes.DEFAULT_TYPE):
             if footer_sync: footer_sync = f"\nSync: {footer_sync}"
             
             # Header with Date/Time
-            now_fmt = datetime.now().strftime("%B %d, %Y - %I:%M %p")
+            now_fmt = local_now.strftime("%B %d, %Y - %I:%M %p")
             header = f"📝 *Voice Note Tasks*\n📅 {now_fmt}\n\n"
             
             footer = f"\n\n---\nUsage: {new_total:.1f}/{limit} min | Status: {plan.title()}{footer_sync}"
