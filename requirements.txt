@@ -1,0 +1,11 @@
+python-telegram-bot>=20.0
+google-generativeai
+flask
+stripe
+python-dotenv
+pydub
+requests
+apscheduler
+pytz
+gunicorn
+psycopg2-binary

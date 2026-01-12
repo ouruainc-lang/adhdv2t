@@ -1,0 +1,1220 @@
+2026-01-12 12:55:12,070 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4242
+2026-01-12 12:55:12,070 [33mPress CTRL+C to quit[0m
+2026-01-12 12:55:13,576 Received event: payment_method.attached
+2026-01-12 12:55:13,576 127.0.0.1 - - [12/Jan/2026 12:55:13] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 12:55:13,636 Received event: customer.created
+2026-01-12 12:55:13,637 127.0.0.1 - - [12/Jan/2026 12:55:13] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 12:55:13,929 Received event: product.created
+2026-01-12 12:55:13,929 127.0.0.1 - - [12/Jan/2026 12:55:13] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 12:55:14,315 Received event: plan.created
+2026-01-12 12:55:14,315 127.0.0.1 - - [12/Jan/2026 12:55:14] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 12:55:14,319 Received event: price.created
+2026-01-12 12:55:14,319 127.0.0.1 - - [12/Jan/2026 12:55:14] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 12:55:17,485 Received event: charge.succeeded
+2026-01-12 12:55:17,486 127.0.0.1 - - [12/Jan/2026 12:55:17] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 12:55:17,532 Received event: customer.updated
+2026-01-12 12:55:17,532 127.0.0.1 - - [12/Jan/2026 12:55:17] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 12:55:17,640 Received event: customer.subscription.created
+2026-01-12 12:55:17,641 127.0.0.1 - - [12/Jan/2026 12:55:17] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 12:55:17,696 Received event: payment_intent.succeeded
+2026-01-12 12:55:17,696 127.0.0.1 - - [12/Jan/2026 12:55:17] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 12:55:17,741 Received event: payment_intent.created
+2026-01-12 12:55:17,741 127.0.0.1 - - [12/Jan/2026 12:55:17] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 12:55:17,845 Received event: invoice.created
+2026-01-12 12:55:17,845 127.0.0.1 - - [12/Jan/2026 12:55:17] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 12:55:17,896 Received event: invoice.finalized
+2026-01-12 12:55:17,896 127.0.0.1 - - [12/Jan/2026 12:55:17] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 12:55:17,990 Received event: invoice.paid
+2026-01-12 12:55:17,991 127.0.0.1 - - [12/Jan/2026 12:55:17] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 12:55:18,035 Received event: invoice.payment_succeeded
+2026-01-12 12:55:18,035 127.0.0.1 - - [12/Jan/2026 12:55:18] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 12:55:18,603 Received event: customer.subscription.deleted
+2026-01-12 12:55:18,605 127.0.0.1 - - [12/Jan/2026 12:55:18] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 12:56:00,686 Received event: invoice_payment.paid
+2026-01-12 12:56:00,687 127.0.0.1 - - [12/Jan/2026 12:56:00] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 12:56:33,912 Received event: customer.subscription.updated
+2026-01-12 12:56:33,913 127.0.0.1 - - [12/Jan/2026 12:56:33] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 12:56:50,728 Received event: customer.subscription.updated
+2026-01-12 12:56:50,728 127.0.0.1 - - [12/Jan/2026 12:56:50] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 12:56:55,099 Received event: customer.subscription.updated
+2026-01-12 12:56:55,099 127.0.0.1 - - [12/Jan/2026 12:56:55] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 12:59:01,149 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4242
+2026-01-12 12:59:01,149 [33mPress CTRL+C to quit[0m
+2026-01-12 12:59:01,212 Invalid signature
+2026-01-12 12:59:01,212 127.0.0.1 - - [12/Jan/2026 12:59:01] "[31m[1mPOST /webhook HTTP/1.1[0m" 400 -
+2026-01-12 13:03:10,218 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4242
+2026-01-12 13:03:10,218 [33mPress CTRL+C to quit[0m
+2026-01-12 13:04:25,558 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4242
+2026-01-12 13:04:25,558 [33mPress CTRL+C to quit[0m
+2026-01-12 13:04:33,003 Received event: billing_portal.session.created
+2026-01-12 13:04:33,003 127.0.0.1 - - [12/Jan/2026 13:04:33] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 13:04:44,684 Received event: customer.subscription.updated
+2026-01-12 13:04:44,684 Subscription updated for cus_TmBC6I6qXF3OQ8. CancelAtPeriodEnd: False
+2026-01-12 13:04:44,685 127.0.0.1 - - [12/Jan/2026 13:04:44] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 13:05:03,381 Received event: customer.subscription.updated
+2026-01-12 13:05:03,381 Subscription updated for cus_TmBC6I6qXF3OQ8. CancelAtPeriodEnd: False
+2026-01-12 13:05:03,381 127.0.0.1 - - [12/Jan/2026 13:05:03] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 13:05:07,737 Received event: customer.subscription.updated
+2026-01-12 13:05:07,737 Subscription updated for cus_TmBC6I6qXF3OQ8. CancelAtPeriodEnd: False
+2026-01-12 13:05:07,737 127.0.0.1 - - [12/Jan/2026 13:05:07] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 13:07:58,870 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4242
+2026-01-12 13:07:58,870 [33mPress CTRL+C to quit[0m
+2026-01-12 13:07:58,899 Received event: customer.subscription.updated
+2026-01-12 13:07:58,899 Subscription updated for cus_TmBC6I6qXF3OQ8. CancelAtPeriodEnd: True
+2026-01-12 13:07:59,617 127.0.0.1 - - [12/Jan/2026 13:07:59] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 13:08:45,942 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4242
+2026-01-12 13:08:45,942 [33mPress CTRL+C to quit[0m
+2026-01-12 13:24:28,265 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4242
+2026-01-12 13:24:28,265 [33mPress CTRL+C to quit[0m
+2026-01-12 13:27:07,777 Received event: customer.subscription.updated
+2026-01-12 13:27:07,777 Subscription updated for cus_TmBC6I6qXF3OQ8. CancelAtPeriodEnd: False
+2026-01-12 13:27:07,778 127.0.0.1 - - [12/Jan/2026 13:27:07] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 13:27:33,076 Received event: customer.subscription.updated
+2026-01-12 13:27:33,076 Subscription updated for cus_TmBC6I6qXF3OQ8. CancelAtPeriodEnd: False
+2026-01-12 13:27:33,077 127.0.0.1 - - [12/Jan/2026 13:27:33] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 13:27:39,225 Received event: customer.subscription.updated
+2026-01-12 13:27:39,226 Subscription updated for cus_TmBC6I6qXF3OQ8. CancelAtPeriodEnd: False
+2026-01-12 13:27:39,226 127.0.0.1 - - [12/Jan/2026 13:27:39] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 13:29:36,272 Received event: customer.subscription.updated
+2026-01-12 13:29:36,272 Subscription updated for cus_TmBC6I6qXF3OQ8. CancelAtPeriodEnd: False
+2026-01-12 13:29:36,273 127.0.0.1 - - [12/Jan/2026 13:29:36] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 13:30:22,145 Received event: customer.subscription.updated
+2026-01-12 13:30:22,145 Subscription updated for cus_TmBC6I6qXF3OQ8. CancelAtPeriodEnd: False
+2026-01-12 13:30:22,145 127.0.0.1 - - [12/Jan/2026 13:30:22] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 13:30:27,073 Received event: customer.subscription.updated
+2026-01-12 13:30:27,073 Subscription updated for cus_TmBC6I6qXF3OQ8. CancelAtPeriodEnd: False
+2026-01-12 13:30:27,074 127.0.0.1 - - [12/Jan/2026 13:30:27] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 13:31:42,808 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4242
+2026-01-12 13:31:42,808 [33mPress CTRL+C to quit[0m
+2026-01-12 13:32:01,904 Received event: customer.subscription.updated
+2026-01-12 13:32:01,905 Payload Dump: {
+  "application": null,
+  "application_fee_percent": null,
+  "automatic_tax": {
+    "disabled_reason": null,
+    "enabled": false,
+    "liability": null
+  },
+  "billing_cycle_anchor": 1768192514,
+  "billing_cycle_anchor_config": null,
+  "billing_mode": {
+    "flexible": {
+      "proration_discounts": "included"
+    },
+    "type": "flexible"
+  },
+  "billing_thresholds": null,
+  "cancel_at": null,
+  "cancel_at_period_end": false,
+  "canceled_at": null,
+  "cancellation_details": {
+    "comment": null,
+    "feedback": null,
+    "reason": null
+  },
+  "collection_method": "charge_automatically",
+  "created": 1768192514,
+  "currency": "usd",
+  "customer": "cus_TmBC6I6qXF3OQ8",
+  "customer_account": null,
+  "days_until_due": null,
+  "default_payment_method": "pm_1SocqTK3Zlhyy12RNXVhMw7V",
+  "default_source": null,
+  "default_tax_rates": [],
+  "description": null,
+  "discounts": [],
+  "ended_at": null,
+  "id": "sub_1SocqWK3Zlhyy12R2BKjQVzz",
+  "invoice_settings": {
+    "account_tax_ids": null,
+    "issuer": {
+      "type": "self"
+    }
+  },
+  "items": {
+    "data": [
+      {
+        "billing_thresholds": null,
+        "created": 1768192515,
+        "current_period_end": 1770870914,
+        "current_period_start": 1768192514,
+        "discounts": [],
+        "id": "si_TmBCwEYnFJL3S5",
+        "metadata": {},
+        "object": "subscription_item",
+        "plan": {
+          "active": true,
+          "amount": 500,
+          "amount_decimal": "500",
+          "billing_scheme": "per_unit",
+          "created": 1768183126,
+          "currency": "usd",
+          "id": "price_1SoaP4K3Zlhyy12RASc5kcz0",
+          "interval": "month",
+          "interval_count": 1,
+          "livemode": false,
+          "metadata": {},
+          "meter": null,
+          "nickname": null,
+          "object": "plan",
+          "product": "prod_Tm8grfLSMZ39cL",
+          "tiers_mode": null,
+          "transform_usage": null,
+          "trial_period_days": null,
+          "usage_type": "licensed"
+        },
+        "price": {
+          "active": true,
+          "billing_scheme": "per_unit",
+          "created": 1768183126,
+          "currency": "usd",
+          "custom_unit_amount": null,
+          "id": "price_1SoaP4K3Zlhyy12RASc5kcz0",
+          "livemode": false,
+          "lookup_key": null,
+          "metadata": {},
+          "nickname": null,
+          "object": "price",
+          "product": "prod_Tm8grfLSMZ39cL",
+          "recurring": {
+            "interval": "month",
+            "interval_count": 1,
+            "meter": null,
+            "trial_period_days": null,
+            "usage_type": "licensed"
+          },
+          "tax_behavior": "unspecified",
+          "tiers_mode": null,
+          "transform_quantity": null,
+          "type": "recurring",
+          "unit_amount": 500,
+          "unit_amount_decimal": "500"
+        },
+        "quantity": 1,
+        "subscription": "sub_1SocqWK3Zlhyy12R2BKjQVzz",
+        "tax_rates": []
+      }
+    ],
+    "has_more": false,
+    "object": "list",
+    "total_count": 1,
+    "url": "/v1/subscription_items?subscription=sub_1SocqWK3Zlhyy12R2BKjQVzz"
+  },
+  "latest_invoice": "in_1SocqUK3Zlhyy12RilCzbcM8",
+  "livemode": false,
+  "metadata": {},
+  "next_pending_invoice_item_invoice": null,
+  "object": "subscription",
+  "on_behalf_of": null,
+  "pause_collection": null,
+  "payment_settings": {
+    "payment_method_options": {
+      "acss_debit": null,
+      "bancontact": null,
+      "card": {
+        "network": null,
+        "request_three_d_secure": "automatic"
+      },
+      "customer_balance": null,
+      "konbini": null,
+      "payto": null,
+      "sepa_debit": null,
+      "us_bank_account": null
+    },
+    "payment_method_types": null,
+    "save_default_payment_method": "off"
+  },
+  "pending_invoice_item_interval": null,
+  "pending_setup_intent": null,
+  "pending_update": null,
+  "plan": {
+    "active": true,
+    "amount": 500,
+    "amount_decimal": "500",
+    "billing_scheme": "per_unit",
+    "created": 1768183126,
+    "currency": "usd",
+    "id": "price_1SoaP4K3Zlhyy12RASc5kcz0",
+    "interval": "month",
+    "interval_count": 1,
+    "livemode": false,
+    "metadata": {},
+    "meter": null,
+    "nickname": null,
+    "object": "plan",
+    "product": "prod_Tm8grfLSMZ39cL",
+    "tiers_mode": null,
+    "transform_usage": null,
+    "trial_period_days": null,
+    "usage_type": "licensed"
+  },
+  "quantity": 1,
+  "schedule": null,
+  "start_date": 1768192514,
+  "status": "active",
+  "test_clock": null,
+  "transfer_data": null,
+  "trial_end": null,
+  "trial_settings": {
+    "end_behavior": {
+      "missing_payment_method": "create_invoice"
+    }
+  },
+  "trial_start": null
+}
+2026-01-12 13:32:01,905 Subscription updated for cus_TmBC6I6qXF3OQ8. CancelAtPeriodEnd: False
+2026-01-12 13:32:01,906 127.0.0.1 - - [12/Jan/2026 13:32:01] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 13:32:20,287 Received event: customer.subscription.updated
+2026-01-12 13:32:20,288 Payload Dump: {
+  "application": null,
+  "application_fee_percent": null,
+  "automatic_tax": {
+    "disabled_reason": null,
+    "enabled": false,
+    "liability": null
+  },
+  "billing_cycle_anchor": 1768192514,
+  "billing_cycle_anchor_config": null,
+  "billing_mode": {
+    "flexible": {
+      "proration_discounts": "included"
+    },
+    "type": "flexible"
+  },
+  "billing_thresholds": null,
+  "cancel_at": 1770870914,
+  "cancel_at_period_end": false,
+  "canceled_at": null,
+  "cancellation_details": {
+    "comment": null,
+    "feedback": null,
+    "reason": "cancellation_requested"
+  },
+  "collection_method": "charge_automatically",
+  "created": 1768192514,
+  "currency": "usd",
+  "customer": "cus_TmBC6I6qXF3OQ8",
+  "customer_account": null,
+  "days_until_due": null,
+  "default_payment_method": "pm_1SocqTK3Zlhyy12RNXVhMw7V",
+  "default_source": null,
+  "default_tax_rates": [],
+  "description": null,
+  "discounts": [],
+  "ended_at": null,
+  "id": "sub_1SocqWK3Zlhyy12R2BKjQVzz",
+  "invoice_settings": {
+    "account_tax_ids": null,
+    "issuer": {
+      "type": "self"
+    }
+  },
+  "items": {
+    "data": [
+      {
+        "billing_thresholds": null,
+        "created": 1768192515,
+        "current_period_end": 1770870914,
+        "current_period_start": 1768192514,
+        "discounts": [],
+        "id": "si_TmBCwEYnFJL3S5",
+        "metadata": {},
+        "object": "subscription_item",
+        "plan": {
+          "active": true,
+          "amount": 500,
+          "amount_decimal": "500",
+          "billing_scheme": "per_unit",
+          "created": 1768183126,
+          "currency": "usd",
+          "id": "price_1SoaP4K3Zlhyy12RASc5kcz0",
+          "interval": "month",
+          "interval_count": 1,
+          "livemode": false,
+          "metadata": {},
+          "meter": null,
+          "nickname": null,
+          "object": "plan",
+          "product": "prod_Tm8grfLSMZ39cL",
+          "tiers_mode": null,
+          "transform_usage": null,
+          "trial_period_days": null,
+          "usage_type": "licensed"
+        },
+        "price": {
+          "active": true,
+          "billing_scheme": "per_unit",
+          "created": 1768183126,
+          "currency": "usd",
+          "custom_unit_amount": null,
+          "id": "price_1SoaP4K3Zlhyy12RASc5kcz0",
+          "livemode": false,
+          "lookup_key": null,
+          "metadata": {},
+          "nickname": null,
+          "object": "price",
+          "product": "prod_Tm8grfLSMZ39cL",
+          "recurring": {
+            "interval": "month",
+            "interval_count": 1,
+            "meter": null,
+            "trial_period_days": null,
+            "usage_type": "licensed"
+          },
+          "tax_behavior": "unspecified",
+          "tiers_mode": null,
+          "transform_quantity": null,
+          "type": "recurring",
+          "unit_amount": 500,
+          "unit_amount_decimal": "500"
+        },
+        "quantity": 1,
+        "subscription": "sub_1SocqWK3Zlhyy12R2BKjQVzz",
+        "tax_rates": []
+      }
+    ],
+    "has_more": false,
+    "object": "list",
+    "total_count": 1,
+    "url": "/v1/subscription_items?subscription=sub_1SocqWK3Zlhyy12R2BKjQVzz"
+  },
+  "latest_invoice": "in_1SocqUK3Zlhyy12RilCzbcM8",
+  "livemode": false,
+  "metadata": {},
+  "next_pending_invoice_item_invoice": null,
+  "object": "subscription",
+  "on_behalf_of": null,
+  "pause_collection": null,
+  "payment_settings": {
+    "payment_method_options": {
+      "acss_debit": null,
+      "bancontact": null,
+      "card": {
+        "network": null,
+        "request_three_d_secure": "automatic"
+      },
+      "customer_balance": null,
+      "konbini": null,
+      "payto": null,
+      "sepa_debit": null,
+      "us_bank_account": null
+    },
+    "payment_method_types": null,
+    "save_default_payment_method": "off"
+  },
+  "pending_invoice_item_interval": null,
+  "pending_setup_intent": null,
+  "pending_update": null,
+  "plan": {
+    "active": true,
+    "amount": 500,
+    "amount_decimal": "500",
+    "billing_scheme": "per_unit",
+    "created": 1768183126,
+    "currency": "usd",
+    "id": "price_1SoaP4K3Zlhyy12RASc5kcz0",
+    "interval": "month",
+    "interval_count": 1,
+    "livemode": false,
+    "metadata": {},
+    "meter": null,
+    "nickname": null,
+    "object": "plan",
+    "product": "prod_Tm8grfLSMZ39cL",
+    "tiers_mode": null,
+    "transform_usage": null,
+    "trial_period_days": null,
+    "usage_type": "licensed"
+  },
+  "quantity": 1,
+  "schedule": null,
+  "start_date": 1768192514,
+  "status": "active",
+  "test_clock": null,
+  "transfer_data": null,
+  "trial_end": null,
+  "trial_settings": {
+    "end_behavior": {
+      "missing_payment_method": "create_invoice"
+    }
+  },
+  "trial_start": null
+}
+2026-01-12 13:32:20,288 Subscription updated for cus_TmBC6I6qXF3OQ8. CancelAtPeriodEnd: False
+2026-01-12 13:32:20,289 127.0.0.1 - - [12/Jan/2026 13:32:20] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 13:32:24,911 Received event: customer.subscription.updated
+2026-01-12 13:32:24,911 Payload Dump: {
+  "application": null,
+  "application_fee_percent": null,
+  "automatic_tax": {
+    "disabled_reason": null,
+    "enabled": false,
+    "liability": null
+  },
+  "billing_cycle_anchor": 1768192514,
+  "billing_cycle_anchor_config": null,
+  "billing_mode": {
+    "flexible": {
+      "proration_discounts": "included"
+    },
+    "type": "flexible"
+  },
+  "billing_thresholds": null,
+  "cancel_at": 1770870914,
+  "cancel_at_period_end": false,
+  "canceled_at": null,
+  "cancellation_details": {
+    "comment": null,
+    "feedback": "switched_service",
+    "reason": "cancellation_requested"
+  },
+  "collection_method": "charge_automatically",
+  "created": 1768192514,
+  "currency": "usd",
+  "customer": "cus_TmBC6I6qXF3OQ8",
+  "customer_account": null,
+  "days_until_due": null,
+  "default_payment_method": "pm_1SocqTK3Zlhyy12RNXVhMw7V",
+  "default_source": null,
+  "default_tax_rates": [],
+  "description": null,
+  "discounts": [],
+  "ended_at": null,
+  "id": "sub_1SocqWK3Zlhyy12R2BKjQVzz",
+  "invoice_settings": {
+    "account_tax_ids": null,
+    "issuer": {
+      "type": "self"
+    }
+  },
+  "items": {
+    "data": [
+      {
+        "billing_thresholds": null,
+        "created": 1768192515,
+        "current_period_end": 1770870914,
+        "current_period_start": 1768192514,
+        "discounts": [],
+        "id": "si_TmBCwEYnFJL3S5",
+        "metadata": {},
+        "object": "subscription_item",
+        "plan": {
+          "active": true,
+          "amount": 500,
+          "amount_decimal": "500",
+          "billing_scheme": "per_unit",
+          "created": 1768183126,
+          "currency": "usd",
+          "id": "price_1SoaP4K3Zlhyy12RASc5kcz0",
+          "interval": "month",
+          "interval_count": 1,
+          "livemode": false,
+          "metadata": {},
+          "meter": null,
+          "nickname": null,
+          "object": "plan",
+          "product": "prod_Tm8grfLSMZ39cL",
+          "tiers_mode": null,
+          "transform_usage": null,
+          "trial_period_days": null,
+          "usage_type": "licensed"
+        },
+        "price": {
+          "active": true,
+          "billing_scheme": "per_unit",
+          "created": 1768183126,
+          "currency": "usd",
+          "custom_unit_amount": null,
+          "id": "price_1SoaP4K3Zlhyy12RASc5kcz0",
+          "livemode": false,
+          "lookup_key": null,
+          "metadata": {},
+          "nickname": null,
+          "object": "price",
+          "product": "prod_Tm8grfLSMZ39cL",
+          "recurring": {
+            "interval": "month",
+            "interval_count": 1,
+            "meter": null,
+            "trial_period_days": null,
+            "usage_type": "licensed"
+          },
+          "tax_behavior": "unspecified",
+          "tiers_mode": null,
+          "transform_quantity": null,
+          "type": "recurring",
+          "unit_amount": 500,
+          "unit_amount_decimal": "500"
+        },
+        "quantity": 1,
+        "subscription": "sub_1SocqWK3Zlhyy12R2BKjQVzz",
+        "tax_rates": []
+      }
+    ],
+    "has_more": false,
+    "object": "list",
+    "total_count": 1,
+    "url": "/v1/subscription_items?subscription=sub_1SocqWK3Zlhyy12R2BKjQVzz"
+  },
+  "latest_invoice": "in_1SocqUK3Zlhyy12RilCzbcM8",
+  "livemode": false,
+  "metadata": {},
+  "next_pending_invoice_item_invoice": null,
+  "object": "subscription",
+  "on_behalf_of": null,
+  "pause_collection": null,
+  "payment_settings": {
+    "payment_method_options": {
+      "acss_debit": null,
+      "bancontact": null,
+      "card": {
+        "network": null,
+        "request_three_d_secure": "automatic"
+      },
+      "customer_balance": null,
+      "konbini": null,
+      "payto": null,
+      "sepa_debit": null,
+      "us_bank_account": null
+    },
+    "payment_method_types": null,
+    "save_default_payment_method": "off"
+  },
+  "pending_invoice_item_interval": null,
+  "pending_setup_intent": null,
+  "pending_update": null,
+  "plan": {
+    "active": true,
+    "amount": 500,
+    "amount_decimal": "500",
+    "billing_scheme": "per_unit",
+    "created": 1768183126,
+    "currency": "usd",
+    "id": "price_1SoaP4K3Zlhyy12RASc5kcz0",
+    "interval": "month",
+    "interval_count": 1,
+    "livemode": false,
+    "metadata": {},
+    "meter": null,
+    "nickname": null,
+    "object": "plan",
+    "product": "prod_Tm8grfLSMZ39cL",
+    "tiers_mode": null,
+    "transform_usage": null,
+    "trial_period_days": null,
+    "usage_type": "licensed"
+  },
+  "quantity": 1,
+  "schedule": null,
+  "start_date": 1768192514,
+  "status": "active",
+  "test_clock": null,
+  "transfer_data": null,
+  "trial_end": null,
+  "trial_settings": {
+    "end_behavior": {
+      "missing_payment_method": "create_invoice"
+    }
+  },
+  "trial_start": null
+}
+2026-01-12 13:32:24,912 Subscription updated for cus_TmBC6I6qXF3OQ8. CancelAtPeriodEnd: False
+2026-01-12 13:32:24,912 127.0.0.1 - - [12/Jan/2026 13:32:24] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 13:33:48,828 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4242
+2026-01-12 13:33:48,828 [33mPress CTRL+C to quit[0m
+2026-01-12 13:34:11,341 Received event: customer.subscription.updated
+2026-01-12 13:34:11,342 Payload Dump: {
+  "application": null,
+  "application_fee_percent": null,
+  "automatic_tax": {
+    "disabled_reason": null,
+    "enabled": false,
+    "liability": null
+  },
+  "billing_cycle_anchor": 1768192514,
+  "billing_cycle_anchor_config": null,
+  "billing_mode": {
+    "flexible": {
+      "proration_discounts": "included"
+    },
+    "type": "flexible"
+  },
+  "billing_thresholds": null,
+  "cancel_at": null,
+  "cancel_at_period_end": false,
+  "canceled_at": null,
+  "cancellation_details": {
+    "comment": null,
+    "feedback": null,
+    "reason": null
+  },
+  "collection_method": "charge_automatically",
+  "created": 1768192514,
+  "currency": "usd",
+  "customer": "cus_TmBC6I6qXF3OQ8",
+  "customer_account": null,
+  "days_until_due": null,
+  "default_payment_method": "pm_1SocqTK3Zlhyy12RNXVhMw7V",
+  "default_source": null,
+  "default_tax_rates": [],
+  "description": null,
+  "discounts": [],
+  "ended_at": null,
+  "id": "sub_1SocqWK3Zlhyy12R2BKjQVzz",
+  "invoice_settings": {
+    "account_tax_ids": null,
+    "issuer": {
+      "type": "self"
+    }
+  },
+  "items": {
+    "data": [
+      {
+        "billing_thresholds": null,
+        "created": 1768192515,
+        "current_period_end": 1770870914,
+        "current_period_start": 1768192514,
+        "discounts": [],
+        "id": "si_TmBCwEYnFJL3S5",
+        "metadata": {},
+        "object": "subscription_item",
+        "plan": {
+          "active": true,
+          "amount": 500,
+          "amount_decimal": "500",
+          "billing_scheme": "per_unit",
+          "created": 1768183126,
+          "currency": "usd",
+          "id": "price_1SoaP4K3Zlhyy12RASc5kcz0",
+          "interval": "month",
+          "interval_count": 1,
+          "livemode": false,
+          "metadata": {},
+          "meter": null,
+          "nickname": null,
+          "object": "plan",
+          "product": "prod_Tm8grfLSMZ39cL",
+          "tiers_mode": null,
+          "transform_usage": null,
+          "trial_period_days": null,
+          "usage_type": "licensed"
+        },
+        "price": {
+          "active": true,
+          "billing_scheme": "per_unit",
+          "created": 1768183126,
+          "currency": "usd",
+          "custom_unit_amount": null,
+          "id": "price_1SoaP4K3Zlhyy12RASc5kcz0",
+          "livemode": false,
+          "lookup_key": null,
+          "metadata": {},
+          "nickname": null,
+          "object": "price",
+          "product": "prod_Tm8grfLSMZ39cL",
+          "recurring": {
+            "interval": "month",
+            "interval_count": 1,
+            "meter": null,
+            "trial_period_days": null,
+            "usage_type": "licensed"
+          },
+          "tax_behavior": "unspecified",
+          "tiers_mode": null,
+          "transform_quantity": null,
+          "type": "recurring",
+          "unit_amount": 500,
+          "unit_amount_decimal": "500"
+        },
+        "quantity": 1,
+        "subscription": "sub_1SocqWK3Zlhyy12R2BKjQVzz",
+        "tax_rates": []
+      }
+    ],
+    "has_more": false,
+    "object": "list",
+    "total_count": 1,
+    "url": "/v1/subscription_items?subscription=sub_1SocqWK3Zlhyy12R2BKjQVzz"
+  },
+  "latest_invoice": "in_1SocqUK3Zlhyy12RilCzbcM8",
+  "livemode": false,
+  "metadata": {},
+  "next_pending_invoice_item_invoice": null,
+  "object": "subscription",
+  "on_behalf_of": null,
+  "pause_collection": null,
+  "payment_settings": {
+    "payment_method_options": {
+      "acss_debit": null,
+      "bancontact": null,
+      "card": {
+        "network": null,
+        "request_three_d_secure": "automatic"
+      },
+      "customer_balance": null,
+      "konbini": null,
+      "payto": null,
+      "sepa_debit": null,
+      "us_bank_account": null
+    },
+    "payment_method_types": null,
+    "save_default_payment_method": "off"
+  },
+  "pending_invoice_item_interval": null,
+  "pending_setup_intent": null,
+  "pending_update": null,
+  "plan": {
+    "active": true,
+    "amount": 500,
+    "amount_decimal": "500",
+    "billing_scheme": "per_unit",
+    "created": 1768183126,
+    "currency": "usd",
+    "id": "price_1SoaP4K3Zlhyy12RASc5kcz0",
+    "interval": "month",
+    "interval_count": 1,
+    "livemode": false,
+    "metadata": {},
+    "meter": null,
+    "nickname": null,
+    "object": "plan",
+    "product": "prod_Tm8grfLSMZ39cL",
+    "tiers_mode": null,
+    "transform_usage": null,
+    "trial_period_days": null,
+    "usage_type": "licensed"
+  },
+  "quantity": 1,
+  "schedule": null,
+  "start_date": 1768192514,
+  "status": "active",
+  "test_clock": null,
+  "transfer_data": null,
+  "trial_end": null,
+  "trial_settings": {
+    "end_behavior": {
+      "missing_payment_method": "create_invoice"
+    }
+  },
+  "trial_start": null
+}
+2026-01-12 13:34:11,342 Subscription updated for cus_TmBC6I6qXF3OQ8. CancelAtPeriodEnd: False, CancelAt: None
+2026-01-12 13:34:11,342 127.0.0.1 - - [12/Jan/2026 13:34:11] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 13:34:26,067 Received event: customer.subscription.updated
+2026-01-12 13:34:26,067 Payload Dump: {
+  "application": null,
+  "application_fee_percent": null,
+  "automatic_tax": {
+    "disabled_reason": null,
+    "enabled": false,
+    "liability": null
+  },
+  "billing_cycle_anchor": 1768192514,
+  "billing_cycle_anchor_config": null,
+  "billing_mode": {
+    "flexible": {
+      "proration_discounts": "included"
+    },
+    "type": "flexible"
+  },
+  "billing_thresholds": null,
+  "cancel_at": 1770870914,
+  "cancel_at_period_end": false,
+  "canceled_at": null,
+  "cancellation_details": {
+    "comment": null,
+    "feedback": null,
+    "reason": "cancellation_requested"
+  },
+  "collection_method": "charge_automatically",
+  "created": 1768192514,
+  "currency": "usd",
+  "customer": "cus_TmBC6I6qXF3OQ8",
+  "customer_account": null,
+  "days_until_due": null,
+  "default_payment_method": "pm_1SocqTK3Zlhyy12RNXVhMw7V",
+  "default_source": null,
+  "default_tax_rates": [],
+  "description": null,
+  "discounts": [],
+  "ended_at": null,
+  "id": "sub_1SocqWK3Zlhyy12R2BKjQVzz",
+  "invoice_settings": {
+    "account_tax_ids": null,
+    "issuer": {
+      "type": "self"
+    }
+  },
+  "items": {
+    "data": [
+      {
+        "billing_thresholds": null,
+        "created": 1768192515,
+        "current_period_end": 1770870914,
+        "current_period_start": 1768192514,
+        "discounts": [],
+        "id": "si_TmBCwEYnFJL3S5",
+        "metadata": {},
+        "object": "subscription_item",
+        "plan": {
+          "active": true,
+          "amount": 500,
+          "amount_decimal": "500",
+          "billing_scheme": "per_unit",
+          "created": 1768183126,
+          "currency": "usd",
+          "id": "price_1SoaP4K3Zlhyy12RASc5kcz0",
+          "interval": "month",
+          "interval_count": 1,
+          "livemode": false,
+          "metadata": {},
+          "meter": null,
+          "nickname": null,
+          "object": "plan",
+          "product": "prod_Tm8grfLSMZ39cL",
+          "tiers_mode": null,
+          "transform_usage": null,
+          "trial_period_days": null,
+          "usage_type": "licensed"
+        },
+        "price": {
+          "active": true,
+          "billing_scheme": "per_unit",
+          "created": 1768183126,
+          "currency": "usd",
+          "custom_unit_amount": null,
+          "id": "price_1SoaP4K3Zlhyy12RASc5kcz0",
+          "livemode": false,
+          "lookup_key": null,
+          "metadata": {},
+          "nickname": null,
+          "object": "price",
+          "product": "prod_Tm8grfLSMZ39cL",
+          "recurring": {
+            "interval": "month",
+            "interval_count": 1,
+            "meter": null,
+            "trial_period_days": null,
+            "usage_type": "licensed"
+          },
+          "tax_behavior": "unspecified",
+          "tiers_mode": null,
+          "transform_quantity": null,
+          "type": "recurring",
+          "unit_amount": 500,
+          "unit_amount_decimal": "500"
+        },
+        "quantity": 1,
+        "subscription": "sub_1SocqWK3Zlhyy12R2BKjQVzz",
+        "tax_rates": []
+      }
+    ],
+    "has_more": false,
+    "object": "list",
+    "total_count": 1,
+    "url": "/v1/subscription_items?subscription=sub_1SocqWK3Zlhyy12R2BKjQVzz"
+  },
+  "latest_invoice": "in_1SocqUK3Zlhyy12RilCzbcM8",
+  "livemode": false,
+  "metadata": {},
+  "next_pending_invoice_item_invoice": null,
+  "object": "subscription",
+  "on_behalf_of": null,
+  "pause_collection": null,
+  "payment_settings": {
+    "payment_method_options": {
+      "acss_debit": null,
+      "bancontact": null,
+      "card": {
+        "network": null,
+        "request_three_d_secure": "automatic"
+      },
+      "customer_balance": null,
+      "konbini": null,
+      "payto": null,
+      "sepa_debit": null,
+      "us_bank_account": null
+    },
+    "payment_method_types": null,
+    "save_default_payment_method": "off"
+  },
+  "pending_invoice_item_interval": null,
+  "pending_setup_intent": null,
+  "pending_update": null,
+  "plan": {
+    "active": true,
+    "amount": 500,
+    "amount_decimal": "500",
+    "billing_scheme": "per_unit",
+    "created": 1768183126,
+    "currency": "usd",
+    "id": "price_1SoaP4K3Zlhyy12RASc5kcz0",
+    "interval": "month",
+    "interval_count": 1,
+    "livemode": false,
+    "metadata": {},
+    "meter": null,
+    "nickname": null,
+    "object": "plan",
+    "product": "prod_Tm8grfLSMZ39cL",
+    "tiers_mode": null,
+    "transform_usage": null,
+    "trial_period_days": null,
+    "usage_type": "licensed"
+  },
+  "quantity": 1,
+  "schedule": null,
+  "start_date": 1768192514,
+  "status": "active",
+  "test_clock": null,
+  "transfer_data": null,
+  "trial_end": null,
+  "trial_settings": {
+    "end_behavior": {
+      "missing_payment_method": "create_invoice"
+    }
+  },
+  "trial_start": null
+}
+2026-01-12 13:34:26,068 Subscription updated for cus_TmBC6I6qXF3OQ8. CancelAtPeriodEnd: False, CancelAt: 1770870914
+2026-01-12 13:34:26,876 127.0.0.1 - - [12/Jan/2026 13:34:26] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 13:34:30,515 Received event: customer.subscription.updated
+2026-01-12 13:34:30,516 Payload Dump: {
+  "application": null,
+  "application_fee_percent": null,
+  "automatic_tax": {
+    "disabled_reason": null,
+    "enabled": false,
+    "liability": null
+  },
+  "billing_cycle_anchor": 1768192514,
+  "billing_cycle_anchor_config": null,
+  "billing_mode": {
+    "flexible": {
+      "proration_discounts": "included"
+    },
+    "type": "flexible"
+  },
+  "billing_thresholds": null,
+  "cancel_at": 1770870914,
+  "cancel_at_period_end": false,
+  "canceled_at": null,
+  "cancellation_details": {
+    "comment": null,
+    "feedback": "unused",
+    "reason": "cancellation_requested"
+  },
+  "collection_method": "charge_automatically",
+  "created": 1768192514,
+  "currency": "usd",
+  "customer": "cus_TmBC6I6qXF3OQ8",
+  "customer_account": null,
+  "days_until_due": null,
+  "default_payment_method": "pm_1SocqTK3Zlhyy12RNXVhMw7V",
+  "default_source": null,
+  "default_tax_rates": [],
+  "description": null,
+  "discounts": [],
+  "ended_at": null,
+  "id": "sub_1SocqWK3Zlhyy12R2BKjQVzz",
+  "invoice_settings": {
+    "account_tax_ids": null,
+    "issuer": {
+      "type": "self"
+    }
+  },
+  "items": {
+    "data": [
+      {
+        "billing_thresholds": null,
+        "created": 1768192515,
+        "current_period_end": 1770870914,
+        "current_period_start": 1768192514,
+        "discounts": [],
+        "id": "si_TmBCwEYnFJL3S5",
+        "metadata": {},
+        "object": "subscription_item",
+        "plan": {
+          "active": true,
+          "amount": 500,
+          "amount_decimal": "500",
+          "billing_scheme": "per_unit",
+          "created": 1768183126,
+          "currency": "usd",
+          "id": "price_1SoaP4K3Zlhyy12RASc5kcz0",
+          "interval": "month",
+          "interval_count": 1,
+          "livemode": false,
+          "metadata": {},
+          "meter": null,
+          "nickname": null,
+          "object": "plan",
+          "product": "prod_Tm8grfLSMZ39cL",
+          "tiers_mode": null,
+          "transform_usage": null,
+          "trial_period_days": null,
+          "usage_type": "licensed"
+        },
+        "price": {
+          "active": true,
+          "billing_scheme": "per_unit",
+          "created": 1768183126,
+          "currency": "usd",
+          "custom_unit_amount": null,
+          "id": "price_1SoaP4K3Zlhyy12RASc5kcz0",
+          "livemode": false,
+          "lookup_key": null,
+          "metadata": {},
+          "nickname": null,
+          "object": "price",
+          "product": "prod_Tm8grfLSMZ39cL",
+          "recurring": {
+            "interval": "month",
+            "interval_count": 1,
+            "meter": null,
+            "trial_period_days": null,
+            "usage_type": "licensed"
+          },
+          "tax_behavior": "unspecified",
+          "tiers_mode": null,
+          "transform_quantity": null,
+          "type": "recurring",
+          "unit_amount": 500,
+          "unit_amount_decimal": "500"
+        },
+        "quantity": 1,
+        "subscription": "sub_1SocqWK3Zlhyy12R2BKjQVzz",
+        "tax_rates": []
+      }
+    ],
+    "has_more": false,
+    "object": "list",
+    "total_count": 1,
+    "url": "/v1/subscription_items?subscription=sub_1SocqWK3Zlhyy12R2BKjQVzz"
+  },
+  "latest_invoice": "in_1SocqUK3Zlhyy12RilCzbcM8",
+  "livemode": false,
+  "metadata": {},
+  "next_pending_invoice_item_invoice": null,
+  "object": "subscription",
+  "on_behalf_of": null,
+  "pause_collection": null,
+  "payment_settings": {
+    "payment_method_options": {
+      "acss_debit": null,
+      "bancontact": null,
+      "card": {
+        "network": null,
+        "request_three_d_secure": "automatic"
+      },
+      "customer_balance": null,
+      "konbini": null,
+      "payto": null,
+      "sepa_debit": null,
+      "us_bank_account": null
+    },
+    "payment_method_types": null,
+    "save_default_payment_method": "off"
+  },
+  "pending_invoice_item_interval": null,
+  "pending_setup_intent": null,
+  "pending_update": null,
+  "plan": {
+    "active": true,
+    "amount": 500,
+    "amount_decimal": "500",
+    "billing_scheme": "per_unit",
+    "created": 1768183126,
+    "currency": "usd",
+    "id": "price_1SoaP4K3Zlhyy12RASc5kcz0",
+    "interval": "month",
+    "interval_count": 1,
+    "livemode": false,
+    "metadata": {},
+    "meter": null,
+    "nickname": null,
+    "object": "plan",
+    "product": "prod_Tm8grfLSMZ39cL",
+    "tiers_mode": null,
+    "transform_usage": null,
+    "trial_period_days": null,
+    "usage_type": "licensed"
+  },
+  "quantity": 1,
+  "schedule": null,
+  "start_date": 1768192514,
+  "status": "active",
+  "test_clock": null,
+  "transfer_data": null,
+  "trial_end": null,
+  "trial_settings": {
+    "end_behavior": {
+      "missing_payment_method": "create_invoice"
+    }
+  },
+  "trial_start": null
+}
+2026-01-12 13:34:30,516 Subscription updated for cus_TmBC6I6qXF3OQ8. CancelAtPeriodEnd: False, CancelAt: 1770870914
+2026-01-12 13:34:31,239 127.0.0.1 - - [12/Jan/2026 13:34:31] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 13:35:01,696 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4242
+2026-01-12 13:35:01,696 [33mPress CTRL+C to quit[0m
+2026-01-12 13:35:18,116 Received event: customer.subscription.updated
+2026-01-12 13:35:18,116 Subscription updated for cus_TmBC6I6qXF3OQ8. CancelAtPeriodEnd: False, CancelAt: None
+2026-01-12 13:35:18,117 127.0.0.1 - - [12/Jan/2026 13:35:18] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 13:35:31,924 Received event: customer.subscription.updated
+2026-01-12 13:35:31,924 Subscription updated for cus_TmBC6I6qXF3OQ8. CancelAtPeriodEnd: False, CancelAt: 1770870914
+2026-01-12 13:35:32,818 127.0.0.1 - - [12/Jan/2026 13:35:32] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 13:35:36,530 Received event: customer.subscription.updated
+2026-01-12 13:35:36,530 Subscription updated for cus_TmBC6I6qXF3OQ8. CancelAtPeriodEnd: False, CancelAt: 1770870914
+2026-01-12 13:35:37,251 127.0.0.1 - - [12/Jan/2026 13:35:37] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 14:04:19,510 Received event: customer.subscription.updated
+2026-01-12 14:04:19,512 Subscription updated for cus_TmBC6I6qXF3OQ8. CancelAtPeriodEnd: False, CancelAt: None
+2026-01-12 14:04:19,512 127.0.0.1 - - [12/Jan/2026 14:04:19] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 14:04:25,947 Received event: customer.subscription.updated
+2026-01-12 14:04:25,948 Subscription updated for cus_TmBC6I6qXF3OQ8. CancelAtPeriodEnd: False, CancelAt: 1770870914
+2026-01-12 14:04:26,684 127.0.0.1 - - [12/Jan/2026 14:04:26] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 14:04:30,552 Received event: customer.subscription.updated
+2026-01-12 14:04:30,552 Subscription updated for cus_TmBC6I6qXF3OQ8. CancelAtPeriodEnd: False, CancelAt: 1770870914
+2026-01-12 14:04:31,319 127.0.0.1 - - [12/Jan/2026 14:04:31] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 14:08:27,901 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4242
+2026-01-12 14:08:27,901 [33mPress CTRL+C to quit[0m
+2026-01-12 14:34:01,631 Received event: customer.subscription.deleted
+2026-01-12 14:34:01,632 Received event: customer.subscription.deleted
+2026-01-12 14:34:01,632 Subscription deleted for customer: cus_TmBC6I6qXF3OQ8
+2026-01-12 14:34:01,632 Subscription deleted for customer: cus_TmB7F9L3NloHrj
+2026-01-12 14:34:01,633 Found user 1061233689 for customer cus_TmBC6I6qXF3OQ8. Downgrading...
+2026-01-12 14:34:01,634 No user found for customer_id: cus_TmB7F9L3NloHrj
+2026-01-12 14:34:01,634 127.0.0.1 - - [12/Jan/2026 14:34:01] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 14:34:01,649 Received event: customer.subscription.deleted
+2026-01-12 14:34:01,649 Subscription deleted for customer: cus_TmB21mRME3FE8h
+2026-01-12 14:34:01,650 No user found for customer_id: cus_TmB21mRME3FE8h
+2026-01-12 14:34:01,651 127.0.0.1 - - [12/Jan/2026 14:34:01] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 14:34:01,862 Received event: customer.subscription.deleted
+2026-01-12 14:34:01,862 Subscription deleted for customer: cus_TmALJIj1GuS764
+2026-01-12 14:34:01,865 No user found for customer_id: cus_TmALJIj1GuS764
+2026-01-12 14:34:01,865 127.0.0.1 - - [12/Jan/2026 14:34:01] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 14:34:02,370 127.0.0.1 - - [12/Jan/2026 14:34:02] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 14:42:29,715 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4242
+2026-01-12 14:42:29,715 [33mPress CTRL+C to quit[0m
+2026-01-12 15:00:19,465 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4242
+2026-01-12 15:00:19,465 [33mPress CTRL+C to quit[0m
+2026-01-12 15:19:27,560 Received event: checkout.session.completed
+2026-01-12 15:19:27,560 Checkout completed. Ref: 1061233689, Cust: cus_TmDrIcDDhjCTc1
+2026-01-12 15:19:27,562 User 1061233689 upgraded to PRO.
+2026-01-12 15:19:28,304 127.0.0.1 - - [12/Jan/2026 15:19:28] "POST /webhook HTTP/1.1" 200 -
+2026-01-12 15:30:10,747 Received event: customer.subscription.updated
+2026-01-12 15:30:10,747 Subscription updated for cus_TmDrIcDDhjCTc1. CancelAtPeriodEnd: False, CancelAt: 1770880763
+2026-01-12 15:30:11,667 127.0.0.1 - - [12/Jan/2026 15:30:11] "POST /webhook HTTP/1.1" 200 -
