@@ -218,7 +218,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "• 5 Minutes/mo\n"
         "• Daily Digest\n"
         "• Todoist & Notion Sync\n\n"
-        "📧 *Support:* ouruainc@gmail.com"
+        "📧 *Support:* ouruainc@gmail.com\n\n"
+        "🎙️ *Send me a voice note now to get started!*"
     )
     await update.message.reply_text(msg, parse_mode='Markdown')
 
